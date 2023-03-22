@@ -15,7 +15,8 @@ export function Home() {
                     <Link to="/3">Section 3</Link>
                 </li>
             </ul>
+            
             <Outlet />
         </div>
-    );
+    )
 }
