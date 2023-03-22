@@ -18,7 +18,10 @@ export function Menu() {
                             <Link to="/contato">Contato</Link>
                         </Button>
                         <Button variant="link">
-                        <Link to="/usuarios">Usuários</Link>
+                            <Link to="/usuarios">Usuários</Link>
+                        </Button>
+                        <Button variant="link">
+                            <Link to="/login">Login</Link>
                         </Button>
                     </Nav>
                 </Container>
