@@ -10,19 +10,23 @@ import { Root } from './pages/Root/Root';
 import { Section } from './Components/Section/Section';
 import { EditaUsuario } from './pages/EditaUsuario/EditaUsuario';
 import { Perfil } from './pages/Perfil/Perfil';
+import { Pokemon } from './pages/Pokemon/Pokemon';
+import { Herois } from './pages/Herois/Herois';
+import { Eletronicos } from './pages/Eletronicos/Eletronicos';
+import { Programadores } from './pages/Programadores/Programadores';
 
 const sections = [
   {
-      title: "Section 1",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit molestias ratione eos vitae adipisci alias fugiat doloribus dignissimos fuga. Quia beatae velit nihil vero voluptatum cumque id iste explicabo veniam?"
+    title: "Section 1",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit molestias ratione eos vitae adipisci alias fugiat doloribus dignissimos fuga. Quia beatae velit nihil vero voluptatum cumque id iste explicabo veniam?"
   },
   {
-      title: "Section 2",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate doloribus sit impedit quos ratione exercitationem praesentium quam tempore culpa, excepturi adipisci soluta officia quas deserunt eum ad tempora a aut."
+    title: "Section 2",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate doloribus sit impedit quos ratione exercitationem praesentium quam tempore culpa, excepturi adipisci soluta officia quas deserunt eum ad tempora a aut."
   },
   {
-      title: "Section 3",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ullam optio perferendis provident vel repudiandae obcaecati! Reiciendis aspernatur non sapiente suscipit fuga asperiores, eum molestiae illum sequi voluptates eius perspiciatis."
+    title: "Section 3",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ullam optio perferendis provident vel repudiandae obcaecati! Reiciendis aspernatur non sapiente suscipit fuga asperiores, eum molestiae illum sequi voluptates eius perspiciatis."
   }
 ];
 
@@ -48,6 +52,10 @@ function App() {
             <Route path="/usuario/edit/:id" element={<EditaUsuario />} />   {/* :id -> Parametro de rota */}
             <Route path="/usuario/perfil/:id" element={<Perfil />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/pokemon" element={<Pokemon />} />
+            <Route path="/herois" element={<Herois/>}/>
+            <Route path="/eletronicos" element={<Eletronicos/>}/>
+            <Route path="/programadores" element={<Programadores/>}/>
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
